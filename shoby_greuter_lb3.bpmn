@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0do80p1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.20.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.4.0">
+  <bpmn:collaboration id="Collaboration_04mrp1q">
+    <bpmn:participant id="Participant_0pl26mn" name="Firma" processRef="Process_0vagcgb" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0vagcgb" isExecutable="true">
+    <bpmn:laneSet id="LaneSet_054z7y4">
+      <bpmn:lane id="Lane_1xk598y" name="User">
+        <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_045pa9b" name="IT-Verwaltung" />
+    </bpmn:laneSet>
+    <bpmn:startEvent id="StartEvent_1" name="Docker-Container wird benötigt" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_04mrp1q">
+      <bpmndi:BPMNShape id="Participant_0pl26mn_di" bpmnElement="Participant_0pl26mn" isHorizontal="true">
+        <dc:Bounds x="160" y="82" width="600" height="370" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1xk598y_di" bpmnElement="Lane_1xk598y" isHorizontal="true">
+        <dc:Bounds x="190" y="270" width="570" height="182" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_045pa9b_di" bpmnElement="Lane_045pa9b" isHorizontal="true">
+        <dc:Bounds x="190" y="82" width="570" height="188" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="269" y="332" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="243" y="375" width="88" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
