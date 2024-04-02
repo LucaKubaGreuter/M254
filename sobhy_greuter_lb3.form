@@ -1,0 +1,23 @@
+{
+  "components": [
+    {
+      "label": "Container Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1cmj4wd",
+        "columns": null
+      },
+      "id": "Field_06bnnkc",
+      "key": "textfield_19ijzx"
+    }
+  ],
+  "type": "default",
+  "id": "Form_1gw8py2",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 15
+}
